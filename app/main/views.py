@@ -79,3 +79,7 @@ def tags():
     for t in tags: # list of tuples: tag, and a dataframe
         tagpapers.append((t,  p[p['tags'].map(lambda z: t in z)]))
     return render_template('tags.html', tagpapers=tagpapers)
+
+@main.route("/readme")
+def readme():
+    return render_template('readme.html')
