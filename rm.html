@@ -2,20 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>{{title}} - pandemodlium</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></link>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"></link>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-social.css') }}"></link>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.css') }}"></link>
-        <script src="{{url_for('static', filename='js/sorttable.js')}}"></script>
+        <title>Read Me - pandemodlium</title>
+        <link rel="stylesheet" href="/static/css/main.css"></link>
+        <link rel="stylesheet" href="/static/css/bootstrap.css"></link>
+        <link rel="stylesheet" href="/static/css/bootstrap-social.css"></link>
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.css"></link>
+        <script src="/static/js/sorttable.js"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
         <meta name="author" content="Brian Holland">
         <meta name="description" content="Pandemic models and related topics">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}"></link>
-        <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap-social.css')}}"></link>
-        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}"></link>
-        {% block header %}{% endblock %}
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="/static/css/bootstrap-social.css"></link>
+        <link rel="stylesheet" href="/static/css/main.css"></link>
+        
     </head>
     <body>
 <
@@ -43,7 +43,7 @@
             <div class="avatar-container">
                 <div class="avatar-img-border">
                     <a href="http://pandemodlium.github.io/">
-                        <img class="avatar-img" src="{{url_for('static', filename='img/glovid19SmallWhite.png')}}">
+                        <img class="avatar-img" src="/static/img/glovid19SmallWhite.png">
                     </a>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="post-heading">
-                            <h1>{{title}}</h1>
+                            <h1>Read Me</h1>
                         </div>
                     </div>
                 </div>
@@ -67,8 +67,17 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <article role="main" class="blog-post">
-        {% block body %}
-        {% endblock %}
+        
+
+<h1>Read Me</h1>
+
+
+<p>
+This site is used to track reference documents on pandemic models and related topics.
+
+The icon is from the <a href="https://phil.cdc.gov/Details.aspx?pid=23312">CDC</a> and NASA.
+</p>
+
             </div>
         </div>
     </div>

@@ -80,6 +80,6 @@ def tags():
         tagpapers.append((t,  p[p['tags'].map(lambda z: t in z)]))
     return render_template('tags.html', tagpapers=tagpapers)
 
-@main.route("/readme")
+@main.route("/rm.html")
 def readme():
     return render_template('readme.html')
