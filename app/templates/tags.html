@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{%set title='Tags'%}
+{% block body %}
+
+<h1>Tags</h1>
+
+{# Overall list of tags #}
+{% for tp in tagpapers%}
+    {% set tag = tp[0] %}
+    {% set papers = tp[1] %}
+    <a href="#{{tag.anchor()}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>{{tag}}&nbsp;({{papers.shape[0]}})</a>
+
+{% endfor %}
+
+
+<div id="full-tags-list">
+{% for tp in tagpapers%}
+    {% set tag = tp[0] %}
+    {% set papers = tp[1] %}
+
+    <h2 id="{{tag.anchor()}}" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;{{tag}}&nbsp;({{papers.shape[0]}})
+    </h2>
+    <div class="post-list">
+        {% for i in papers.index %}
+            {% set paper = papers.loc[i] %}
+            <div class="tag-entry">
+                <a href="{{paper.url}}">{{paper.title}}</a>
+                {%if not paper['github']==''%}
+                <br/><span style='font-style:italic;'><a href="{{paper['github']}}">{{paper['github']}}</a></span>
+                {%endif%}
+                <div class="entry-date">{{paper.date}}</div>
+                {# tags #}
+                <div>
+                    {% for ptag in paper.tags%}
+                        <a href="#{{ptag.anchor()}}" class="btn-primary tag-btn">{{ptag}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{%- endfor -%}
+</div>
+
+{#
+Commenting this out, was the old way
+
+{% for tp in tagpapers %}
+    <hr/>
+    {% set tag = tp[0] %}
+    {% set papers = tp[1] %}
+    <h2><a id="{{tag.anchor()}}"/>{{tag}}</h2>
+    {% include 'paperstable.html'%}
+{% endfor %}
+#}
+{% endblock %}
+

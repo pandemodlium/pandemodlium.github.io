@@ -1,0 +1,20 @@
+- init: SOA
+  name: Society of Actuares
+  url: https://www.soa.org/
+- init: ICLCRT
+  name: Imperial College COVID-19 Response Team
+  url: https://www.imperial.ac.uk/media/imperial-college/medicine
+- init: NHS
+  name: National Health Service
+- init: CDC
+  name: Centers for Disease Control
+  url: https://www.cdc.gov
+- init: ECDC
+  name: European Centre for Disease Prevention and Control
+  url: https://www.ecdc.europa.eu/en
+- init: IHME
+  name: Institute for Health Metrics and Evaluation (UW Medicine)
+  url: http://healthdata.org
+- init: CAS
+  name: Casualty Actuarial Society
+  url: https://www.casact.org/

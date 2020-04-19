@@ -1,0 +1,32 @@
+{# pass a dataframe 'papers'
+Use like this:
+The dataframe 'papers' must be defined in the including file.
+    {% include 'paperstable.html' %}
+#}
+
+ <table class="sortable">
+     <tr>
+          <th>Date</th>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>github</th>
+          <th>Tags</th>
+          <th>Notes</th>
+     </tr>
+     {% for i in papers.index %}
+           {% set r = papers.loc[i] %}
+           <tr>
+                <td>{{r['date']}}</td>
+                <td><a href="{{r['url']}}">{{r['title']}}</a></td>
+                <td>{{', '.join(r['author'])}}</td>
+                <td><a href="{{r['github']}}">{{r['github'].replace('https://github.com/', '')}}</a></td>
+                <td>
+                  {% for t in r['tags'] %}
+                    <a href="tags.html#{{t.lower().replace(' ','_')}}">{{t}}</a>{{"," if not loop.last }}
+                  {% endfor %}
+                </td>
+
+           </tr>
+
+     {% endfor %}
+  </table>

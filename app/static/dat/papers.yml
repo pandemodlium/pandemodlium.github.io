@@ -1,0 +1,54 @@
+- url: https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf
+  title: Impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand
+  date: 2020-03-16
+  github: https://github.com/ImperialCollegeLondon/covid19model
+  author: Imperial College COVID-19 Response Team
+  tags: [Imperial College London, model, data]
+- url: 'https://www.fredhutch.org/en/news/center-news/2020/03/coronavirus-latest-scientific-research.html'
+  title: 'Science papers you should be reading about the coronavirus'
+  date: 2020-03-31
+  author: Fred Hutch News Service staff
+- url: https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/
+  title: 'AWS data lake'
+  tags: [data, AWS]
+- url: https://www.soa.org/resources/research-reports/2020/connecting-emerging-covid-19/
+  title: SOA COVID-19 Updates
+  tags: [SOA]
+- url: https://www.soa.org/resources/research-reports/2020/impact-coronavirus/
+  title: 'Society of Actuaries Research Brief: Impact of COVID-19'
+  author: SOA
+  tags: [SOA]
+- url: https://www.imperial.ac.uk/news/196797/epidemiologists-launch-weekly-forecast-coronavirus-deaths/
+  title: Epidemiologists launch weekly forecast fo coronavirus deaths
+  github: https://github.com/sangeetabhatia03/covid19-short-term-forecasts
+  tags: [forecast, Imperial College London]
+- url: https://www.soa.org/globalassets/assets/files/resources/research-report/2020/connecting-emerging-covid-19.pdf
+  title: Connecting Emerging COVID-19 Data to Insured Claims
+  author: [Hall, MacDonald]
+  tags: [SOA]
+  date: 2020-04-15
+- url: https://coronavirus.jhu.edu/us-map
+  title: COVID-19 United States Cases by County
+  author: Johns Hopkins University
+  tags: [map, data, JHU, dashboard]
+- url: https://coronavirus.jhu.edu/
+  title: Johns Hopkins University of Medicine Coronavirus Resource Center
+  tags: [data, JHU, analysis]
+- url: https://covid19.healthdata.org/
+  title: COVID-19 projections assuming full social distancing through May 2020
+  author: IHME
+  tags: [IHME, dashboard, data, forecast]
+- url: https://www.medrxiv.org/content/10.1101/2020.03.09.20033357v1.full.pdf
+  title: Estimates of the severity of COVID-19 disease
+  author: many
+  date: 2020-03-09
+  tags: [Imperial College London, J-IDEA]
+  notes: is number 12 from 16 Mar ICL.  Date inferred from filename.
+- url: https://www.bmj.com/bmj/section-pdf/186284?path=/bmj/339/7714/Research_Methods_Reporting.full.pdf
+  cite: 
+  title: Assessing the severity of the novel influenza A/H1N1 pandemic
+  author: [Tini Garske, Judith Legrand, Christl A Donnelly, Helen Ward, Simon Cauchemez, Christophe Fraser, Neil M Ferguson, Azra C Ghani]
+  local: Assessing_the_severity_of_the_novel_influenza_A_H1N1_pandemic.pdf
+  date: 2009-07-08
+  tags: [flu,nonparametric]
+
