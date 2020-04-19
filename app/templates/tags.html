@@ -18,11 +18,12 @@
 {% for tp in tagpapers%}
     {% set tag = tp[0] %}
     {% set papers = tp[1] %}
-
-    <h2 id="{{tag.anchor()}}" class="linked-section">
+    <a id="{{tag.anchor()}}"></a><br/><br/><br/>{# terrible kludge to get the  #}
+    <h2 iclass="linked-section">
         <i class="fas fa-tag" aria-hidden="true"></i>
         &nbsp;{{tag}}&nbsp;({{papers.shape[0]}})
     </h2>
+
     <div class="post-list">
         {% for i in papers.index %}
             {% set paper = papers.loc[i] %}
@@ -44,16 +45,6 @@
 {%- endfor -%}
 </div>
 
-{#
-Commenting this out, was the old way
 
-{% for tp in tagpapers %}
-    <hr/>
-    {% set tag = tp[0] %}
-    {% set papers = tp[1] %}
-    <h2><a id="{{tag.anchor()}}"/>{{tag}}</h2>
-    {% include 'paperstable.html'%}
-{% endfor %}
-#}
 {% endblock %}
 

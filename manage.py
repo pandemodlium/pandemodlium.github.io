@@ -50,8 +50,7 @@ def publish(msg, push=False, remote='origin', branch='master'):
     for page in pages:
         os.system('git add %s' % os.path.join(basedir, page.path))
     """
-    os.system('git commit -am "committing all changespublishing articles %s"' % ' '.join(
-            [page.path for page in pages]))
+    os.system('git commit -am "%s"' % msg)
     if push or prompt_bool(
             "push to remote branch '%s %s'? [y]" % (remote, branch)):
         os.system('git push %s %s' % (remote, branch))
