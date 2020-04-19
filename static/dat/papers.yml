@@ -65,6 +65,11 @@
   author: [AIR, Verisk]
   tags: [dashboard, forecast]
   title: Verisk COVID-19 Dashboard
+- url: https://github.com/casact/covid_19_data
+  author: [CAS]
+  github: https://github.com/casact/covid_19_data
+  title: casact/covid_19_data
+  tags: [data, actuaries]
 
 
 
