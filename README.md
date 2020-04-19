@@ -2,7 +2,7 @@ This is a static site blog like Jekyll for Github pages, but it uses python and 
 
 It generates
 
-    https://pandemodlium.github.io/
+[https://pandemodlium.github.io/](https://pandemodlium.github.io/)
 
 ## Notes
 
