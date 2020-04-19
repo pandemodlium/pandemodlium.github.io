@@ -61,5 +61,10 @@
   date: 2004-10-08
   tags: [SARS, Kaplan-Meier]
   cite: "Ghani AC, Donnelly CA, Cox DR, et al. Methods for estimating the case fatality ratio for a novel, emerging infectious disease. Am J Epidemiol 2005; 162: 479–86."
+- url: https://www.air-worldwide.com/models/Life/verisk-covid-19-dashboard/
+  author: [AIR, Verisk]
+  tags: [dashboard, forecast]
+  title: Verisk COVID-19 Dashboard
+
 
 
