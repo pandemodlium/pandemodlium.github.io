@@ -1,9 +1,47 @@
+# List references here, was initially papers. Each one should have:
+# url: to the pdf. Assumed to be pdf if no extension.
+# title
+# date yyyy-mm-dd (if known), I'm picking the article submission date over publication date for no good reason
+# github site if applicable
+# tags: [tag0, tag1, tag2, ...]
+# author: # maybe list, or not
+# cite: the way the paper says it should be cited
+# ref: references.  Each reference shoudl have
+#    n: the item number
+#    url: the url of the file, used to link to it if I've found it.  Here are papers I've found pretty much.
+#    citation: the way this paper cites its reference
+
 - url: https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf
   title: Impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand
   date: 2020-03-16
   github: https://github.com/ImperialCollegeLondon/covid19model
   author: Imperial College COVID-19 Response Team
   tags: [Imperial College London, model, data]
+  ref:
+    - n: 6
+      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290797/pdf/zpq4639.pdf
+      citation: "Halloran ME, Ferguson NM, Eubank S, et al. Modeling targeted layered containment of an influenza pandemic in the United States"
+    - n: 9
+      url: https://www.medrxiv.org/content/medrxiv/early/2020/01/28/2020.01.26.20018754.full.pdf
+      citation: "Linton NM, Kobayashi T, Yang Y, et al. Epidemiological characteristics of novel coronavirus infection: A statistical analysis of publicly available case data"
+    - n: 10
+      url: https://www.nejm.org/doi/pdf/10.1056/NEJMoa2001316
+      citation: "Li Q, Guan X, Wu P, et al. Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus–Infected Pneumonia. N Engl J Med 2020"
+    - n: 11
+      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/pdf/eurosurv-25-4-2.pdf
+      citation: "Riou J, Althaus CL. Pattern of early human-to-human transmission of Wuhan 2019 novel coronavirus (2019-nCoV), December 2019 to January 2020. Euro Surveill 2020;25(4):1–5."
+    - n: 15
+      url: https://www.medrxiv.org/content/10.1101/2020.01.31.20019901v2.full.pdf
+      citation: "Kucharski AJ, Russell TW, Diamond C, et al. Early dynamics of transmission and control of COVID-19: a mathematical modelling study. Lancet Infect Dis"
+    - n: 16
+      url: https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf
+      citation: "Report of the WHO-China Joint Mission on Coronavirus Disease2019 (COVID-19)"
+    - n: 17
+      url: https://www.ncbi.nlm.nih.gov/pubmed/18401408
+      citation: "Cauchemez S, Valleron AJ, Boëlle PY, Flahault A, Ferguson NM. Estimating the impact of school closure on influenza transmission from Sentinel data."
+    - n: 18
+      url: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004681
+      citation: "Fumanelli L, Ajelli M, Merler S, Ferguson NM, Cauchemez S. Model-Based Comprehensive Analysis of School Closure Policies for Mitigating Influenza Epidemics and Pandemics."
 - url: 'https://www.fredhutch.org/en/news/center-news/2020/03/coronavirus-latest-scientific-research.html'
   title: 'Science papers you should be reading about the coronavirus'
   date: 2020-03-31
@@ -46,9 +84,11 @@
   notes: is number 12 from 16 Mar ICL.  Date inferred from filename.
   ref:
     - n: 11
-      cite: "Ghani AC, Donnelly CA, Cox DR, et al. Methods for estimating the case fatality ratio for a novel, emerging infectious disease. Am J Epidemiol 2005; 162: 479–86."
+      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7109816/pdf/kwi230.pdf
+      citation: "Ghani AC, Donnelly CA, Cox DR, et al. Methods for estimating the case fatality ratio for a novel, emerging infectious disease. Am J Epidemiol 2005; 162: 479–86."
     - n: 25
-      cite: "Griffin J, Ghani A. CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease. Stat Softw Components 2009; published online May 7."
+      url: https://ideas.repec.org/c/boc/bocode/s454601.html
+      citation: "Griffin J, Ghani A. CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease. Stat Softw Components 2009; published online May 7."
 - url: https://www.bmj.com/bmj/section-pdf/186284?path=/bmj/339/7714/Research_Methods_Reporting.full.pdf
   cite: 
   title: Assessing the severity of the novel influenza A/H1N1 pandemic
@@ -70,6 +110,54 @@
   github: https://github.com/casact/covid_19_data
   title: casact/covid_19_data
   tags: [data, actuaries]
+- url: https://ideas.repec.org/c/boc/bocode/s454601.html
+  date: 2009-05-07
+  title: "CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease"
+  cite: 'Jamie Griffin & Azra Ghani, 2005. "CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease," Statistical Software Components S454601, Boston College Department of Economics, revised 07 May 2009.'
 
+- url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290797/pdf/zpq4639.pdf
+  title: "Modeling targeted layered containment of an influenza pandemic in the United States"
+  date: 2007-07-23
+  tags: [social distancing, flu, stochastic simulation]
 
+- url: https://www.medrxiv.org/content/10.1101/2020.01.31.20019901v2.full.pdf
+  title: "Early dynamics of transmission and control of COVID-19: a mathematical modelling study"
+  tags: [modeling]
+  date: 2020-01-31
+  notes: "date inferred from file name"
 
+- url: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004681
+  title: "Model-Based Comprehensive Analysis of School Closure Policies for Mitigating Influenza Epidemics and Pandemics"
+  date: 2015-08-15
+  author: [Laura Fumanelli, Marco Ajelli, Stefano Merler, Neil M. Ferguson, Simon Cauchemez]
+  tags: [social distancing, modeling]
+
+- url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/pdf/eurosurv-25-4-2.pdf
+  title: "Pattern of early human-to-human transmission of Wuhan 2019 novel coronavirus (2019-nCoV), December 2019 to January 2020"
+  date: 2020-01-24
+  author: [Julien Riou, Christian L. Althaus]
+  tags: []
+
+- url: https://www.medrxiv.org/content/medrxiv/early/2020/01/28/2020.01.26.20018754.full.pdf
+  title: "Epidemiological characteristics of novel coronavirus infection: A statistical analysis of publicly available case data"
+  date: 2020-01-26
+  notes: date inferred from filename
+  tags: []
+
+- url: https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf
+  title: "Report of the WHO-China Joint Mission on Coronavirus Disease 2019 (COVID-19)"
+  date: 2020-02-16
+  author: [WHO, PRC]
+  tags: [WHO, China]
+
+- url: https://www.ncbi.nlm.nih.gov/pubmed/18401408
+  title: "Estimating the impact of school closure on influenza transmission from Sentinel data"
+  date: 2008-04-10
+  author: [Cauchemez S, Valleron AJ, "Boëlle PY", Flahault A, Ferguson NM]
+  notes: paywall
+
+- url: https://www.nejm.org/doi/pdf/10.1056/NEJMoa2001316
+  title: "Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus–Infected Pneumonia"
+  date: 2020-03-26
+  autor: many
+  notes: analysis of first 425 lab-confirmed cases
