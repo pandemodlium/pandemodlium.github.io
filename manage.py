@@ -33,22 +33,30 @@ def new_post(title):
     os.system("subl %s" % filepath)
 
 @manager.command
-def publish(push=False, remote='origin', branch='master'):
-    """adds blog post pages in root directory to git staging, commits, 
-    and optionally those blog posts to github"""
+def publish(msg, push=False, remote='origin', branch='master'):
+    """regenerates by freezing and commits everything, optionally pushes with given message
+    arguments:
+    msg: the commit message
+    push=False: whether to push
+    remote='origin'
+    branch='master'
+    """
     freezer.freeze()
 
+    """
     for page in pages:
         os.system('git add %s' % page.path)
     os.system('git add %s' % os.path.join(basedir,'app/pages/'))
     for page in pages:
         os.system('git add %s' % os.path.join(basedir, page.path))
-    os.system('git commit -m "publishing articles %s"' % ' '.join(
+    """
+    os.system('git commit -am "committing all changespublishing articles %s"' % ' '.join(
             [page.path for page in pages]))
     if push or prompt_bool(
-            "push from branch '%s' to remote '%s'? [y]" % (remote, branch)):
+            "push to remote branch '%s %s'? [y]" % (remote, branch)):
         os.system('git push %s %s' % (remote, branch))
 
+# 
 @manager.command
 def remove(filename, push=False, remote='origin', branch='master'):
     """removes a blog post completely from the system"""
