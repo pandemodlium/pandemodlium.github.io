@@ -136,6 +136,10 @@
   title: "Epidemiological characteristics of novel coronavirus infection: A statistical analysis of publicly available case data"
   date: 2020-01-26
   notes: date inferred from filename
+  ref:
+    - url: https://www.medrxiv.org/content/10.1101/2020.01.26.20018754v2.supplementary-material
+      n: '?'
+      note: referenced from site https://www.medrxiv.org/content/10.1101/2020.01.26.20018754v2.article-info
   tags: []
 
 - url: https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf
@@ -198,3 +202,11 @@
   github: https://github.com/pandemodlium
   tags: [data, code]
 
+- url: https://www.medrxiv.org/content/10.1101/2020.01.26.20018754v2.supplementary-material
+  title: "Incubation Period and Other Epidemiological Characteristics of 2019 Novel Coronavirus Infections with Right Truncation: A Statistical Analysis of Publicly Available Case Data"
+  tags: [data]
+
+- url: https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
+  title: "COVID-19 Situation update worldwide"
+  tags: [data]
+  author: ECDC
