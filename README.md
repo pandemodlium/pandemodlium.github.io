@@ -4,6 +4,10 @@ It generates
 
 [https://pandemodlium.github.io/](https://pandemodlium.github.io/)
 
+## Updating information
+* update app/main/static/dat/papers.yml: see its header for more.
+    * *not* static/dat/papers.yml
+
 ## Notes
 
 * see flask-jekyll for more info

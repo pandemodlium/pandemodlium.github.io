@@ -1,3 +1,8 @@
+# More info on authors or publishers from papers.yml
+#
+#
+#
+
 - init: SOA
   name: Society of Actuares
   url: https://www.soa.org/
@@ -12,9 +17,19 @@
 - init: ECDC
   name: European Centre for Disease Prevention and Control
   url: https://www.ecdc.europa.eu/en
+
 - init: IHME
   name: Institute for Health Metrics and Evaluation (UW Medicine)
   url: http://healthdata.org
+
 - init: CAS
   name: Casualty Actuarial Society
   url: https://www.casact.org/
+
+- init: JHU
+  name: Johns Hopkins University
+  url: https://www.jhu.edu
+
+- init: JHU CSSE
+  name: Center for for Systems Science and Engineering at JHU
+  url: https://systems.jhu.edu/

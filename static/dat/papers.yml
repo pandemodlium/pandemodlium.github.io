@@ -3,10 +3,10 @@
 # title
 # date yyyy-mm-dd (if known), I'm picking the article submission date over publication date for no good reason
 # github site if applicable
-# tags: [tag0, tag1, tag2, ...]
+# tags: [tag0, tag1, tag2, ...] # NOTE: github tag added if missing and there is a github site for the entry
 # author: # maybe list, or not
 # cite: the way the paper says it should be cited
-# ref: references.  Each reference shoudl have
+# ref: references.  Each reference should have
 #    n: the item number
 #    url: the url of the file, used to link to it if I've found it.  Here are papers I've found pretty much.
 #    citation: the way this paper cites its reference
@@ -65,13 +65,7 @@
   author: [Hall, MacDonald]
   tags: [SOA]
   date: 2020-04-15
-- url: https://coronavirus.jhu.edu/us-map
-  title: COVID-19 United States Cases by County
-  author: Johns Hopkins University
-  tags: [map, data, JHU, dashboard]
-- url: https://coronavirus.jhu.edu/
-  title: Johns Hopkins University of Medicine Coronavirus Resource Center
-  tags: [data, JHU, analysis]
+
 - url: https://covid19.healthdata.org/
   title: COVID-19 projections assuming full social distancing through May 2020
   author: IHME
@@ -161,3 +155,46 @@
   date: 2020-03-26
   autor: many
   notes: analysis of first 425 lab-confirmed cases
+
+- url: https://www.worldometers.info/coronavirus/
+  title: Coronavirus Update from Worldometer
+  tags: [dashboard]
+
+- url: https://www.ft.com/coronavirus-latest
+  title: "Coronavirus tracked: the latest figures as the pandemic spreads"
+  tags: [dashboard]
+  author: Financial Times
+
+- url: https://www.nytimes.com/article/coronavirus-county-data-us.html
+  title: "We’re Sharing Coronavirus Case Data for Every U.S. County"
+  github: https://github.com/nytimes/covid-19-data
+  author: New York Times
+  tags: [data]
+  date: 2020-03-28
+
+- url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html
+  title: "Cases of Coronavirus Disease (COVID-19) in the U.S."
+  author: CDC
+  tags: [data, dashboard]
+
+- url: https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
+  title: "COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)"
+  autor: JHU CSSE
+  github: https://github.com/CSSEGISandData/COVID-19
+  tags: [data, dashboard]
+  notes: list of data sources in bottom middle.  Seems same as "https://coronavirus.jhu.edu/us-map"
+
+- url: https://coronavirus.jhu.edu/us-map
+  title: COVID-19 United States Cases by County
+  author: JHU CSSE
+  tags: [map, data, JHU, dashboard]
+
+- url: https://coronavirus.jhu.edu/
+  title: Johns Hopkins University of Medicine Coronavirus Resource Center
+  tags: [data, JHU, analysis]
+
+- url: https://pandemodlium.github.io/
+  title: "Pandemodlium: resources for pandemic and related models"
+  github: https://github.com/pandemodlium
+  tags: [data, code]
+
