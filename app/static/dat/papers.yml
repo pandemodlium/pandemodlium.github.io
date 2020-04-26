@@ -1,6 +1,7 @@
 # List references here, was initially papers. Each one should have:
 # url: to the pdf. Assumed to be pdf if no extension.
-# title
+# url_other: list of other items
+# title: "Might be better to use quotes: if there are special characters"
 # date yyyy-mm-dd (if known), I'm picking the article submission date over publication date for no good reason
 # github site if applicable
 # tags: [tag0, tag1, tag2, ...] # NOTE: github tag added if missing and there is a github site for the entry
@@ -30,6 +31,10 @@
     - n: 11
       url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/pdf/eurosurv-25-4-2.pdf
       citation: "Riou J, Althaus CL. Pattern of early human-to-human transmission of Wuhan 2019 novel coronavirus (2019-nCoV), December 2019 to January 2020. Euro Surveill 2020;25(4):1–5."
+    - n: 12
+      url: https://www.medrxiv.org/content/10.1101/2020.03.09.20033357v1.full.pdf
+      citation: "Verity  R,  Okell  LC,  Dorigatti  I,  et  al.  Estimates  of  the  severity  of  COVID-19  disease.  medRxiv 2020; Available from https://www.medrxiv.org/content/10.1101/2020.03.09.20033357v1"
+
     - n: 15
       url: https://www.medrxiv.org/content/10.1101/2020.01.31.20019901v2.full.pdf
       citation: "Kucharski AJ, Russell TW, Diamond C, et al. Early dynamics of transmission and control of COVID-19: a mathematical modelling study. Lancet Infect Dis"
@@ -71,8 +76,11 @@
   author: IHME
   tags: [IHME, dashboard, data, forecast]
 - url: https://www.medrxiv.org/content/10.1101/2020.03.09.20033357v1.full.pdf
+  url_other:
+    - https://www.medrxiv.org/content/10.1101/2020.03.09.20033357v1
+    - "https://www.thelancet.com/pdfs/journals/laninf/PIIS1473-3099(20)30243-7.pdf"
   title: Estimates of the severity of COVID-19 disease
-  author: many
+  author: [Verity  R,  Okell  LC,  Dorigatti  I,  et  al.]
   date: 2020-03-09
   tags: [Imperial College London, J-IDEA]
   notes: is number 12 from 16 Mar ICL.  Date inferred from filename.
@@ -106,6 +114,7 @@
   github: https://github.com/casact/covid_19_data
   title: casact/covid_19_data
   tags: [data, actuaries]
+
 - url: https://ideas.repec.org/c/boc/bocode/s454601.html
   date: 2009-05-07
   title: "CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease"
@@ -214,3 +223,15 @@
   title: "COVID-19 Situation update worldwide"
   tags: [data]
   author: ECDC
+
+- url: https://www.nytimes.com/interactive/2020/04/22/upshot/coronavirus-models.html
+  title: What 5 Coronavirus Models Say the Next Month Will Look Like
+  tags: [models, New York Times, IHME, Imperial College London, JHU, Northeastern, MIT, Columbia]
+  date: 2020-04-22
+  author: [Quoctrung Bui, Josh Katz, Alicia Parlapiano, Margot Sanger-Katz]
+
+- url: https://fivethirtyeight.com/features/politics-podcast-how-one-modeler-is-trying-to-forecast-the-toll-of-covid-19/
+  url_other: ["https://podcasts.apple.com/us/podcast/fivethirtyeight-politics/id1077418457?i=1000472325708"]
+  title: "FiveThirtyEight Politics Podcast: Forecasting the toll of COVID-19"
+  tags: [models, IHME]
+  author: [Galen Druke, Nate Silver, Chris Murray]

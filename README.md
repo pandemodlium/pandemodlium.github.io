@@ -5,8 +5,10 @@ It generates
 [https://pandemodlium.github.io/](https://pandemodlium.github.io/)
 
 ## Updating information
-* update app/main/static/dat/papers.yml: see its header for more.
-    * *not* static/dat/papers.yml
+* update any yml files in app/main/static/dat/\
+    * papers.yml: see its header for more, is the main one
+    * *not* static/dat/papers.yml, which is used for display and produced in publication
+* run ```python manage.py publish 'Your commit message here'```
 
 ## Notes
 
