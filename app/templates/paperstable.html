@@ -1,12 +1,15 @@
 {# pass a dataframe 'papers'
 Use like this:
-The dataframe 'papers' must be defined in the including file.
     {% include 'paperstable.html' %}
+
+    The dataframe 'papers' must be defined in the including file.
+
+This bit is separated out in case it is useful in multiple locations for different subsets.
+
 #}
 
  <table class="sortable">
-     <tr>
-          <th>Date</th>
+     <tr> <th>Date</th>
           <th>Title</th>
           <th>Authors</th>
           <th>github</th>
@@ -17,7 +20,22 @@ The dataframe 'papers' must be defined in the including file.
            {% set r = papers.loc[i] %}
            <tr>
                 <td>{{r['date']}}</td>
-                <td><a href="{{r['url']}}">{{r['title']}}</a></td>
+                <td> <a id="{{i}}"/> {# an index to get to this row from references#}
+                    <a href="{{r['url']}}">{{r['title']}}</a>
+                    {# references from this document #}
+                    {% if (r['ref']) %}
+                        <font size="-2">
+                        <ul>{% for ref in r['ref'] %}
+                            {% set thisref = papers.loc[papers['url']==ref['url']] %}
+                            <li>
+                                <a href="#{{thisref.index[0]}}">{{thisref['title'].values[0]}}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                            </font>
+                    {% endif %}
+                </td>
                 <td>{{', '.join(r['author'])}}</td>
                 <td><a href="{{r['github']}}">{{r['github'].replace('https://github.com/', '')}}</a></td>
                 <td>
@@ -25,7 +43,6 @@ The dataframe 'papers' must be defined in the including file.
                     <a href="tags.html#{{t.lower().replace(' ','_')}}">{{t}}</a>{{"," if not loop.last }}
                   {% endfor %}
                 </td>
-
            </tr>
 
      {% endfor %}

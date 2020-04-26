@@ -9,6 +9,7 @@ It generates
     * papers.yml: see its header for more, is the main one
     * *not* static/dat/papers.yml, which is used for display and produced in publication
 * run ```python manage.py publish 'Your commit message here'```
+* to test before uploading: ```python manage.py freeze && python -m http.server```
 
 ## Notes
 

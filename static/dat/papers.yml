@@ -306,19 +306,23 @@
   tags: [Zika]
 
 - url: https://covid-19.bsvgateway.org/
+  title: "COVID-19 Confirmed and Forecasted Case Data"
   author: Los Alamos National Laboratory
   tags: [dashboard, forecast, projection]
 
 - url: https://reichlab.io/
+  title: "Nicholas Reich: Biostatistics and Infectious Disease Epidemiology"
   author: Nicholas Reich et al.
   tags: [flu, forecast, projection]
 
 - url: https://columbia.maps.arcgis.com/apps/webappviewer/index.html?id=ade6ba85450c4325a12a5b9c09ba796c
+  title: "Severe COVID-19 Risk Mapping"
   author: "Columbia University, Epidemiology"
   tags: [forecast, projection, dashboard, model]
 
 - url: https://www.covidanalytics.io/projections
   url_other: https://www.covidanalytics.io/
+  title: COVIDAnalytics
   author: [MIT Operations Research Center, Dimitris Bertsimas]
   tags: [forecast, projection, dashboard, model, MIT]
 
