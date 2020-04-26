@@ -7,7 +7,8 @@
 # tags: [tag0, tag1, tag2, ...] # NOTE: github tag added if missing and there is a github site for the entry
 # author: # maybe list, or not
 # cite: the way the paper says it should be cited
-# ref: references.  Each reference should have
+# ref: references.  Each reference should have at least url, if numberd with citation fo format in paper also n, citation.
+#   The url is the url property of the other entry and should also be here.
 #    n: the item number
 #    url: the url of the file, used to link to it if I've found it.  Here are papers I've found pretty much.
 #    citation: the way this paper cites its reference
@@ -229,9 +230,95 @@
   tags: [models, New York Times, IHME, Imperial College London, JHU, Northeastern, MIT, Columbia]
   date: 2020-04-22
   author: [Quoctrung Bui, Josh Katz, Alicia Parlapiano, Margot Sanger-Katz]
-
+  ref:
+    - url: "https://www.statnews.com/2020/04/17/influential-covid-19-model-uses-flawed-methods-shouldnt-guide-policies-critics-say/"
+    - url: "https://annals.org/aim/fullarticle/2764774/caution-warranted-using-institute-health-metrics-evaluation-model-predicting-course"
+    - url: https://covid-19.bsvgateway.org/
+    - url: https://reichlab.io/
+    - url: https://columbia.maps.arcgis.com/apps/webappviewer/index.html?id=ade6ba85450c4325a12a5b9c09ba796c
+    - url: https://www.covidanalytics.io/projections
 - url: https://fivethirtyeight.com/features/politics-podcast-how-one-modeler-is-trying-to-forecast-the-toll-of-covid-19/
   url_other: ["https://podcasts.apple.com/us/podcast/fivethirtyeight-politics/id1077418457?i=1000472325708"]
   title: "FiveThirtyEight Politics Podcast: Forecasting the toll of COVID-19"
   tags: [models, IHME]
   author: [Galen Druke, Nate Silver, Chris Murray]
+
+- url: "https://www.statnews.com/2020/04/17/influential-covid-19-model-uses-flawed-methods-shouldnt-guide-policies-critics-say/"
+  title: "Influential Covid-19 model uses flawed methods and shouldn’t guide U.S. policies, critics say"
+  tags: [IHME, models]
+  author: [Sharon Begley]
+  date: 2020-04-17
+  notes: criticism of IHME model
+
+- url: "https://annals.org/aim/fullarticle/2764774/caution-warranted-using-institute-health-metrics-evaluation-model-predicting-course"
+  title: "Caution Warranted: Using the Institute for Health Metrics and Evaluation Model for Predicting the Course of the COVID-19 Pandemic"
+  tags: [IHME, models]
+  author: ["Nicholas P. Jewell, PhD", "Joseph A. Lewnard, PhD", "Britta L. Jewell, PhD"]
+  date: 2020-04-14
+  notes: criticism of IHME model
+
+- url: https://covid19.gleamproject.org/
+  title: "MODELING COVID-19 IN THE UNITED STATES"
+  tags: [GLEAM, models, dashboard, Northeastern University]
+  author: GLEAM
+  ref:
+    - n: n/a
+      url: https://science.sciencemag.org/content/368/6489/395
+    - n: 1
+      url: https://www.pnas.org/content/106/51/21484
+
+    - n: 2
+      url: https://www.sciencedirect.com/science/article/abs/pii/S1877750310000438?via%3Dihub
+    - n: 3
+      url: https://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-10-165
+
+    - n: 4
+      url: https://www.pnas.org/content/114/22/E4334
+
+- url: https://science.sciencemag.org/content/368/6489/395
+  url_other: https://science.sciencemag.org/content/368/6489/395/tab-pdf
+  title: "The effect of travel restrictions on the spread of the 2019 novel coronavirus (COVID-19) outbreak"
+  tags: [GLEAM, models, projection]
+  author: GLEAM
+  notes: "Science  24 Apr 2020: Vol. 368, Issue 6489, pp. 395-400; DOI: 10.1126/science.aba975"
+
+- url: https://www.pnas.org/content/106/51/21484
+  url_other: https://www.pnas.org/content/pnas/106/51/21484.full.pdf
+  title: Multiscale mobility networks and the spatial spreading of infectious diseases
+  author: [Duygu Balcan, Vittoria Colizza, Bruno Gonçalves, Hao Hu, José J. Ramasco, and Alessandro Vespignani]
+  date: 2009-12-22
+
+- url: https://www.sciencedirect.com/science/article/abs/pii/S1877750310000438?via%3Dihub
+  url_other: [https://doi.org/10.1016/j.jocs.2010.07.002]
+  title: "Modeling the spatial spread of infectious diseases: The GLobal Epidemic and Mobility computational model"
+  date: 2010-08-01
+  author: [Duygu Balcan, Bruno Gonçalves, Hao Hu, José J.Ramasco, Vittoria Colizza, Alessandro Vespignani]
+
+- url: https://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-10-165
+  title: "Real-time numerical forecast of global epidemic spreading: case study of 2009 A/H1N1pdm"
+  date: 2012-12-13
+  author: [Michele Tizzoni, Paolo Bajardi, Chiara Poletto, José J Ramasco, Duygu Balcan, Bruno Gonçalves, Nicola Perra, Vittoria Colizza, Alessandro Vespignani]
+  tags: [forecast, H1N1]
+
+- url: https://www.pnas.org/content/114/22/E4334
+  title: "Spread of Zika virus in the Americas"
+  date: 2016-12-08
+  tags: [Zika]
+
+- url: https://covid-19.bsvgateway.org/
+  author: Los Alamos National Laboratory
+  tags: [dashboard, forecast, projection]
+
+- url: https://reichlab.io/
+  author: Nicholas Reich et al.
+  tags: [flu, forecast, projection]
+
+- url: https://columbia.maps.arcgis.com/apps/webappviewer/index.html?id=ade6ba85450c4325a12a5b9c09ba796c
+  author: "Columbia University, Epidemiology"
+  tags: [forecast, projection, dashboard, model]
+
+- url: https://www.covidanalytics.io/projections
+  url_other: https://www.covidanalytics.io/
+  author: [MIT Operations Research Center, Dimitris Bertsimas]
+  tags: [forecast, projection, dashboard, model, MIT]
+
