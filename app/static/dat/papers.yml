@@ -111,6 +111,7 @@
   title: "CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease"
   cite: 'Jamie Griffin & Azra Ghani, 2005. "CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease," Statistical Software Components S454601, Boston College Department of Economics, revised 07 May 2009.'
   tags: [stata, Kaplan-Meier]
+  notes: See also https://econpapers.repec.org/software/bocbocode/s454601.htm
 
 - url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290797/pdf/zpq4639.pdf
   title: "Modeling targeted layered containment of an influenza pandemic in the United States"
