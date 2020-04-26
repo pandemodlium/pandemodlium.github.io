@@ -95,6 +95,8 @@
   date: 2004-10-08
   tags: [SARS, Kaplan-Meier]
   cite: "Ghani AC, Donnelly CA, Cox DR, et al. Methods for estimating the case fatality ratio for a novel, emerging infectious disease. Am J Epidemiol 2005; 162: 479–86."
+  notes: see also https://academic.oup.com/aje/article/162/5/479/82647#620755
+
 - url: https://www.air-worldwide.com/models/Life/verisk-covid-19-dashboard/
   author: [AIR, Verisk]
   tags: [dashboard, forecast]
@@ -108,6 +110,7 @@
   date: 2009-05-07
   title: "CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease"
   cite: 'Jamie Griffin & Azra Ghani, 2005. "CASEFAT: Stata module for estimating the case fatality ratio of a new infectious disease," Statistical Software Components S454601, Boston College Department of Economics, revised 07 May 2009.'
+  tags: [stata, Kaplan-Meier]
 
 - url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290797/pdf/zpq4639.pdf
   title: "Modeling targeted layered containment of an influenza pandemic in the United States"
