@@ -326,3 +326,7 @@
   author: [MIT Operations Research Center, Dimitris Bertsimas]
   tags: [forecast, projection, dashboard, model, MIT]
 
+- url: https://www.modelshop.com/blog/covid/
+  title: Demonstration COVID-19 Projection Model
+  author: [Tom Tobin]
+  tags: [model]
