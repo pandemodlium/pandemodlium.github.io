@@ -130,7 +130,7 @@
 
 - url: https://www.medrxiv.org/content/10.1101/2020.01.31.20019901v2.full.pdf
   title: "Early dynamics of transmission and control of COVID-19: a mathematical modelling study"
-  tags: [modeling]
+  tags: [model]
   date: 2020-01-31
   notes: "date inferred from file name"
 
@@ -138,7 +138,7 @@
   title: "Model-Based Comprehensive Analysis of School Closure Policies for Mitigating Influenza Epidemics and Pandemics"
   date: 2015-08-15
   author: [Laura Fumanelli, Marco Ajelli, Stefano Merler, Neil M. Ferguson, Simon Cauchemez]
-  tags: [social distancing, modeling]
+  tags: [social distancing, model]
 
 - url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/pdf/eurosurv-25-4-2.pdf
   title: "Pattern of early human-to-human transmission of Wuhan 2019 novel coronavirus (2019-nCoV), December 2019 to January 2020"
@@ -227,7 +227,7 @@
 
 - url: https://www.nytimes.com/interactive/2020/04/22/upshot/coronavirus-models.html
   title: What 5 Coronavirus Models Say the Next Month Will Look Like
-  tags: [models, New York Times, IHME, Imperial College London, JHU, Northeastern, MIT, Columbia]
+  tags: [model, New York Times, IHME, Imperial College London, JHU, Northeastern, MIT, Columbia]
   date: 2020-04-22
   author: [Quoctrung Bui, Josh Katz, Alicia Parlapiano, Margot Sanger-Katz]
   ref:
@@ -240,26 +240,26 @@
 - url: https://fivethirtyeight.com/features/politics-podcast-how-one-modeler-is-trying-to-forecast-the-toll-of-covid-19/
   url_other: ["https://podcasts.apple.com/us/podcast/fivethirtyeight-politics/id1077418457?i=1000472325708"]
   title: "FiveThirtyEight Politics Podcast: Forecasting the toll of COVID-19"
-  tags: [models, IHME]
+  tags: [model, IHME]
   author: [Galen Druke, Nate Silver, Chris Murray]
 
 - url: "https://www.statnews.com/2020/04/17/influential-covid-19-model-uses-flawed-methods-shouldnt-guide-policies-critics-say/"
   title: "Influential Covid-19 model uses flawed methods and shouldn’t guide U.S. policies, critics say"
-  tags: [IHME, models]
+  tags: [IHME, model]
   author: [Sharon Begley]
   date: 2020-04-17
   notes: criticism of IHME model
 
 - url: "https://annals.org/aim/fullarticle/2764774/caution-warranted-using-institute-health-metrics-evaluation-model-predicting-course"
   title: "Caution Warranted: Using the Institute for Health Metrics and Evaluation Model for Predicting the Course of the COVID-19 Pandemic"
-  tags: [IHME, models]
+  tags: [IHME, model]
   author: ["Nicholas P. Jewell, PhD", "Joseph A. Lewnard, PhD", "Britta L. Jewell, PhD"]
   date: 2020-04-14
   notes: criticism of IHME model
 
 - url: https://covid19.gleamproject.org/
   title: "MODELING COVID-19 IN THE UNITED STATES"
-  tags: [GLEAM, models, dashboard, Northeastern University]
+  tags: [GLEAM, model, dashboard, Northeastern University]
   author: GLEAM
   ref:
     - n: n/a
@@ -278,7 +278,7 @@
 - url: https://science.sciencemag.org/content/368/6489/395
   url_other: https://science.sciencemag.org/content/368/6489/395/tab-pdf
   title: "The effect of travel restrictions on the spread of the 2019 novel coronavirus (COVID-19) outbreak"
-  tags: [GLEAM, models, projection]
+  tags: [GLEAM, model, projection]
   author: GLEAM
   notes: "Science  24 Apr 2020: Vol. 368, Issue 6489, pp. 395-400; DOI: 10.1126/science.aba975"
 
