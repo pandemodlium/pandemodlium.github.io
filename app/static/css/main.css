@@ -769,6 +769,11 @@ pre {
   margin: 5px;
 }
 
+.tag-url {
+    font-style: italic;
+    font-size: small;
+}
+
 #full-tags-list {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

@@ -29,8 +29,9 @@
             {% set paper = papers.loc[i] %}
             <div class="tag-entry">
                 <a href="{{paper.url}}">{{paper.title}}</a>
+                <br/><a href="{{paper.url}}"><span class="tag-url">{{paper.url}}</span></a>
                 {%if not paper['github']==''%}
-                <br/><span style='font-style:italic;'><a href="{{paper['github']}}">{{paper['github']}}</a></span>
+                    <br/><span style='font-style:italic;'><a href="{{paper['github']}}">{{paper['github']}}</a></span>
                 {%endif%}
                 <div class="entry-date">{{paper.date}}</div>
                 {# tags #}
