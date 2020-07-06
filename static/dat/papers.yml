@@ -330,3 +330,9 @@
   title: Demonstration COVID-19 Projection Model
   author: [Tom Tobin]
   tags: [model]
+
+- url: https://github.com/cdcepi/COVID-19-ILI-forecasting
+  title: The CDC COVID-19 ILI Forecasting Project
+  github: https://github.com/cdcepi/COVID-19-ILI-forecasting
+  author: CDC
+  tags: [CDC, forecast, projection]
